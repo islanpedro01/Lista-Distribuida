@@ -13,7 +13,7 @@ func main() {
 
 	// Synchronous call
 	var reply bool
-	var reply_i int
+	var reply_i inta
 	err = client.Call("RemoteList.Append", 10, &reply)
 	err = client.Call("RemoteList.Append", 20, &reply)
 	err = client.Call("RemoteList.Append", 30, &reply)
