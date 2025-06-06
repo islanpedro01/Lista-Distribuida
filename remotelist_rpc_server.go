@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 	"net/rpc"
-	"pkg/remotelist"
+	"ifpb/remotelist/pkg/list"
 	"os"
 	"os/signal"
 	"syscall"
