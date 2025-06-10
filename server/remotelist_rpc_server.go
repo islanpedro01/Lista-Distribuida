@@ -74,5 +74,4 @@ func main(){
 		// 6) Espera sinal de interrupção para encerrar
 	<-sigCh
 	fmt.Println("Servidor interrompido. Fechando arquivos de log...")
-	// rl.Cleanup() // método opcional para fechar logFile, se quiser
 }
