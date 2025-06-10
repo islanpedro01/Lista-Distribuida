@@ -79,13 +79,13 @@ func runClient(id int, wg *sync.WaitGroup) {
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	var wg sync.WaitGroup
+	var wg sync.WaitGroup // Contador de tarefas concorrentes
 
 	for i := 0; i < numClients; i++ {
 		wg.Add(1)
 		go runClient(i, &wg)
 	}
 
-	wg.Wait()
+	wg.Wait() // Aguarda o último cliente executar o wg.Done() para prosseguir
 	fmt.Println("Todos os clientes terminaram.")
 }
